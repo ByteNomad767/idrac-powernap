@@ -1,0 +1,10 @@
+{
+  "idrac": { "host": "192.0.2.10" },
+  "proxmox": { "host": "192.0.2.20", "sshUser": "root", "guestVmId": "" },
+  "ipmitoolPath": "tools\\ipmitool.exe",
+  "powerOn": { "maxAttempts": 5, "verifySeconds": 90 },
+  "boot": { "sshTimeoutMinutes": 15, "allowOnePowerCycle": true },
+  "runtimeMinutes": 60,
+  "shutdown": { "gracefulAttempts": 3, "waitMinutesPerAttempt": 10, "softIpmiFallback": true, "hardPowerOffFallback": true },
+  "notify": { "ntfyUrl": "" }
+}
